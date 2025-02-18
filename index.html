@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bar Graph Generator</title>
+</head>
+<body>
+    <div class="main">
+        <p>Bar Graph Generator</p>
+        <div class="input-chart-section">
+            <div class="y-inputs" id="y-inputs">
+                <input type="text" placeholder="value of Y eg:Amount" id="x-field-main" readonly>
+            </div>
+            
+            <div class="x-inputs" id="x-inputs">
+                <input type="text" placeholder="value of X eg:Name" id="y-field-main" readonly>
+            </div>
+        </div>
+
+        <div class="add-button">
+            <button class="add-btn add">+ Add More Fields</button>
+            <button class="add-btn remove">- Remove One Field</button>
+            <button id="generate-btn">Generate Graph</button>
+        </div>
+
+        <div id="canvas"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
